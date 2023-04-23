@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Waris Virse De</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/layoutStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="../images/icon.ico" type="image/ico">
+    <link rel="stylesheet" href="style/galleryStyle.css"/>
+    <script type="text/javascript" src="../scripts/homeScript.js"></script>
+</head>
+
+<body>
+
+    <div id="banner">
+        <h4>Due to COVID-19, the academy is closed until further notice.</h4>
+    </div>
+
+    <div id="header">
+        <h1><a href="../index.html">WARIS VIRSE DE</a></h1>
+        <div id="lines" onclick="menuOpen()">
+            <span class="line"></span><br>
+            <span class="line"></span><br>
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <div id="menu">
+        <h3><a href="../index.html">HOME</a></h3>
+        <h3><a href="./gallery.html">GALLERY</a></h3>
+        <h3 style="cursor:pointer" onclick="contOpen()">CONTACT US</h3>
+        <h3 style="cursor:pointer" onclick="regOpen()">REGISTER</h3>
+    </div>
+
+    <div id="nav">
+        <div class="nav-left">
+            <h1><a href="../index.html">WARIS VIRSE DE</a></h1>
+        </div>
+        <div class="nav-right">
+            <h3><a href="../index.html">HOME</a></h3>
+            <h3><a href="./gallery.html">GALLERY</a></h3>
+            <h3 style="cursor:pointer" onclick="contOpen()">CONTACT US</h3>
+            <h3 style="cursor:pointer" onclick="regOpen()">REGISTER</h3>
+        </div>
+    </div>
+
+    <div id="contact-us">
+
+        <div class="box">
+            <span id="cross" onclick="contClose()">&times;</span>
+            <h2>WARIS VIRSE DE</h2>
+            <img src="../images/phone.png" id="phone">
+            <h5>+1(647) 994 4007</h5>
+            <img src="../images/email.png" id="email">
+            <h5>Email: info@warisvirsede.ca</h5>
+            <div class="links">
+                <a href="https://www.facebook.com/warisvirsedey/" onclick="window.open(this.href);return false;"
+                    class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/warisvirsede/" onclick="window.open(this.href);return false;"
+                    class="fa fa-instagram"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="overlay">
+
+    </div>
+
+    <div id="menu">
+        <h3><a href="./index.html">HOME</a></h3>
+        <h3><a href="content/gallery.html">GALLERY</a></h3>
+        <h3 style="cursor:pointer" onclick="contOpen()">CONTACT US</h3>
+        <h3 style="cursor:pointer" onclick="regOpen()">REGISTER</h3>
+    </div>
+
+
+    <div id="form">
+        <form class="anim-form" action="reg.php" method="POST">
+            <span id="close-cross" onclick="document.getElementById('form').style.display='none';
+             document.getElementById('overlay').style.display='none';">&times;</span>
+            <h1>JOIN US TODAY!!!</h1>
+            <div class="form-row">
+                <input type="text" name="fName" class="input-box" required autocomplete="off" title="">
+                <label for="fName" class="input-label">
+                    <span class="label-text">First Name<span class="ast">&ast;</span></span>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <input type="text" name="lName" class="input-box" required autocomplete="off" title="">
+                <label for="lName" class="input-label">
+                    <span class="label-text">Last Name<span class="ast">&ast;</span></span>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <input type="text" name="number" class="input-box" required autocomplete="off" title="">
+                <label for="number" class="input-label">
+                    <span class="label-text">Phone Number<span class="ast">&ast;</span></span>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <input type="text" name="email" class="input-box" required autocomplete="off" title="">
+                <label form="email" class="input-label">
+                    <span class="label-text">E-mail<span class="ast">&ast;</span></span>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <input type="number" name="age" class="input-box" required autocomplete="off" min="5" max="99" title="">
+                <label for="age" class="input-label">
+                    <span class="label-text">Age<span class="ast">&ast;</span></span>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <input type="number" name="exp" class="input-box" min="0" required autocomplete="off" title="">
+                <label for="exp" class="input-label">
+                    <span class="label-text">Experience(in years)<span class="ast">&ast;</span></span>
+                </label>
+            </div>
+
+            <div class="form-row btns">
+                <button type="submit" id="submit-btn">Submit</button>
+                <button type="reset" id="reset-btn">Reset</button>
+            </div>
+        </form>    
+    </div>
+
+    
+    <div class="row">
+        <div class="column">
+            <img src="gallery/bg1.jpg" style="width:100%">
+            <img src="gallery/bg2.jpg" style="width:100%">
+            <img src="gallery/bg3.jpg" style="width:100%">
+            <img src="gallery/bg4.jpg" style="width:100%">
+            <img src="gallery/bg5.jpg" style="width:100%">
+            <img src="gallery/bg6.jpg" style="width:100%">
+            <img src="gallery/bg25.jpg" style="width:100%">
+            <img src="gallery/bg27.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="gallery/bg7.jpg" style="width:100%">
+            <img src="gallery/bg8.jpg" style="width:100%">
+            <img src="gallery/bg9.jpg" style="width:100%">
+            <img src="gallery/bg10.jpg" style="width:100%">
+            <img src="gallery/bg11.jpg" style="width:100%">
+            <img src="gallery/bg12.jpg" style="width:100%">
+            <img src="gallery/bg29.jpg" style="width:100%">
+            <img src="gallery/bg28.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="gallery/bg13.jpg" style="width:100%">
+            <img src="gallery/bg14.jpg" style="width:100%">
+            <img src="gallery/bg15.jpg" style="width:100%">
+            <img src="gallery/bg16.jpg" style="width:100%">
+            <img src="gallery/bg17.jpg" style="width:100%">
+            <img src="gallery/bg18.jpg" style="width:100%">
+            
+            
+        </div>
+        <div class="column">
+            <img src="gallery/bg19.jpg" style="width:100%">
+            <img src="gallery/bg21.jpg" style="width:100%">
+            <img src="gallery/bg20.jpg" style="width:100%">
+            <img src="gallery/bg26.jpg" style="width:100%">
+            <img src="gallery/bg23.jpg" style="width:100%">
+            <img src="gallery/bg24.jpg" style="width:100%">
+            <img src="gallery/bg22.jpg" style="width:100%">
+        </div>
+    </div>
+
+
+
+
+
+   
+</body>
+
+</html>
