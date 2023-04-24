@@ -19,7 +19,7 @@ a{
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    top:20px;
+    /* top:20px; */
     background-color: #242038;
     color:white;
     height:5vh;

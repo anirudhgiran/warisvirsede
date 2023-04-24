@@ -24,7 +24,7 @@ p{
     line-height: 24px;
 }
 
-#banner{
+/* #banner{
     position:fixed;
     top:0;
     width:100%;
@@ -34,7 +34,7 @@ p{
     text-align: center;
     font-size:18px;
     z-index: 10;
-}
+} */
 
 #banner h4{
     background-color:red;
@@ -47,12 +47,13 @@ p{
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    top:20px;
+    /* top:20px; */
     background-color: #242038;
     color:white;
-    height:5vh;
+    height:80px;
     padding: 2vh 0;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 #nav a{
